@@ -1,1 +1,1 @@
-¡Hola, bienvenido!, solo estoy jugando un poco con git!
+¡Hola, bienvenido!, solo estoy jugando un poco con git.
