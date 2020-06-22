@@ -1,5 +1,6 @@
 //SCSS es una extensión para CSS
 //Sass: compilarlo primero
+//Agregar al HTML como si fuera una hoja de estilo .css --> <link rel="stylesheet" href="variables.css">
 $color: red;//Variable
 
 ul {
@@ -9,4 +10,14 @@ ul {
 ol {
   font-size: 18px;
   color: $color;
+}
+
+div{
+    font-size: 18px;
+    p{
+        color: green;
+    }
+    ul{
+        color: coral;
+    }
 }
