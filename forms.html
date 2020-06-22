@@ -4,9 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        input [type="text"]{
+            background-color: blueviolet;
+        }
+        button:hover{
+            background-color: rgb(239, 21, 247);
+            color: bisque;
+        }
+        button{
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            background-color: gray;
+        }
+        a::before{
+           content: "🎶 Click here:";
+           font-weight: bold; 
+        }
+        p::selection{
+            color: red;
+            background-color: chartreuse;
+        }
+        @media print {
+            .screen-only{
+                display: none;
+            }
+        }
+        @media (min-width: 500px){
+            body{
+                background-color: darkorange;
+            }
+            h1::before{
+                content: "😂";
+            } 
+        }
+        @media (max-width: 300px){
+            body{
+                background-color: goldenrod;
+            }
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container > div{
+            background-color: forestgreen;
+            font-size: 15px;
+            margin: 20px;
+            padding: 20px;
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
-
+    <h1>Bienvenido</h1>
     <form style="background-color: aquamarine; height: 200px; width: 500px">
         <div style="align-content: center;">
             <input name="pais" list="paises" placeholder="Paises">
@@ -29,6 +81,46 @@
                 <option value="Guatemala"></option>
             </datalist>
         </div>
+        <div>
+            <button>Click me X2!</button>
+        </div>
     </form>
+    <ul>
+        <li> <a href="#">un link</a></li>
+        <li><a href="#">otro link</a></li>
+        <li><a href="#">tercer link</a></li>
+    </ul>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit adipisci rerum possimus suscipit maxime iusto hic aspernatur quasi minima doloremque. Laudantium a eveniet ipsa! Sunt adipisci rerum dolores aspernatur labore?
+    </p>
+    <p class="screen-only">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, laboriosam a. Sequi voluptates illum quos omnis distinctio. Ad sapiente ab est? Quisquam fuga quibusdam commodi dolor quos sit labore nam.
+    </p>
+    <div class="container">
+        <div> A.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat autem, dicta quidem asperiores ab nulla voluptas eaque atque tempora laborum ex tenetur pariatur quae, earum, ipsam assumenda. Perspiciatis, nemo totam?
+        </div>
+        <div>B.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam itaque dignissimos, optio corporis temporibus facere fuga eos saepe fugiat sint cupiditate repellat voluptatibus laudantium officiis id at officia, nostrum ea.
+        </div>
+        <div>C.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore unde odio facere, iure velit labore voluptatum! Voluptatum cupiditate nisi eos aspernatur sequi, quae est aut rem quasi vero ex dolores.
+        </div>
+        <div>D.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus, atque porro neque cum dolor eius officiis molestias magnam laborum labore assumenda sit autem sapiente itaque reprehenderit quasi dolore vitae!
+        </div>
+        <div>E.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cum modi ipsam ducimus nostrum, quae assumenda sapiente? Reprehenderit porro vero eaque voluptatibus. Est soluta quisquam temporibus labore aut a ab.
+        </div>
+        <div>F.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque modi iste molestiae porro quia earum sint ad eligendi officiis totam aspernatur aliquam officia omnis, magni fuga laborum ullam non obcaecati?
+        </div>
+        <div>G.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae nihil esse magni eos earum assumenda eligendi similique omnis, commodi, id, magnam aperiam possimus sed minima atque rerum. Perspiciatis, perferendis reprehenderit.
+        </div>
+        <div>H.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quidem sequi quae reprehenderit officiis illum explicabo tempore libero possimus sapiente magnam dolor, molestiae, ab quia laboriosam hic praesentium dolorum voluptate!
+        </div>
+    </div>
 </body>
 </html>
