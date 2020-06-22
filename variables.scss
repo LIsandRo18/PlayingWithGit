@@ -1,0 +1,12 @@
+//SCSS es una extensión para CSS
+//Sass: compilarlo primero
+$color: red;//Variable
+
+ul {
+  font-size: 14px;
+  color: $color;
+}
+ol {
+  font-size: 18px;
+  color: $color;
+}
